@@ -1,7 +1,7 @@
 multi url v0.1 08feb2024
 made by julianp
 
-don't use config ts
+don't use config ts for the url to scrawl, only modify json name in config.ts
 put the url to crawl in tocrawl.csv
 
 optional
