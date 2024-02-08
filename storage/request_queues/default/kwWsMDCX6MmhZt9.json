@@ -1,6 +1,6 @@
 {
 	"id": "kwWsMDCX6MmhZt9",
-	"json": "{\"id\":\"kwWsMDCX6MmhZt9\",\"url\":\"https://platform.openai.com/docs/api-reference/parsing-server-sent-events\",\"loadedUrl\":\"https://platform.openai.com/docs/api-reference/parsing-server-sent-events\",\"uniqueKey\":\"https://platform.openai.com/docs/api-reference/parsing-server-sent-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-01-29T11:20:18.122Z\"}",
+	"json": "{\"id\":\"kwWsMDCX6MmhZt9\",\"url\":\"https://platform.openai.com/docs/api-reference/parsing-server-sent-events\",\"loadedUrl\":\"https://platform.openai.com/docs/api-reference/parsing-server-sent-events\",\"uniqueKey\":\"https://platform.openai.com/docs/api-reference/parsing-server-sent-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-02-08T16:10:37.247Z\"}",
 	"method": "GET",
 	"orderNo": null,
 	"retryCount": 0,

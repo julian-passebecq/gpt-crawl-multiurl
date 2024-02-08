@@ -1,6 +1,6 @@
 {
 	"id": "zq0MLdCn8J2n5Up",
-	"json": "{\"id\":\"zq0MLdCn8J2n5Up\",\"url\":\"https://platform.openai.com/docs/api-reference/threads/deleteThread\",\"loadedUrl\":\"https://platform.openai.com/docs/api-reference/threads/deleteThread\",\"uniqueKey\":\"https://platform.openai.com/docs/api-reference/threads/deleteThread\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-01-29T11:20:44.028Z\"}",
+	"json": "{\"id\":\"zq0MLdCn8J2n5Up\",\"url\":\"https://platform.openai.com/docs/api-reference/threads/deleteThread\",\"loadedUrl\":\"https://platform.openai.com/docs/api-reference/threads/deleteThread\",\"uniqueKey\":\"https://platform.openai.com/docs/api-reference/threads/deleteThread\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-02-08T16:10:52.015Z\"}",
 	"method": "GET",
 	"orderNo": null,
 	"retryCount": 0,
