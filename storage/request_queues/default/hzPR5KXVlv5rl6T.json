@@ -1,0 +1,9 @@
+{
+	"id": "hzPR5KXVlv5rl6T",
+	"json": "{\"id\":\"hzPR5KXVlv5rl6T\",\"url\":\"https://platform.openai.com/docs/api-reference/fine-tuning/event-object\",\"loadedUrl\":\"https://platform.openai.com/docs/api-reference/fine-tuning/event-object\",\"uniqueKey\":\"https://platform.openai.com/docs/api-reference/fine-tuning/event-object\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-01-29T11:20:29.279Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://platform.openai.com/docs/api-reference/fine-tuning/event-object",
+	"url": "https://platform.openai.com/docs/api-reference/fine-tuning/event-object"
+}

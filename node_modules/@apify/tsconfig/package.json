@@ -1,0 +1,29 @@
+{
+  "name": "@apify/tsconfig",
+  "version": "0.1.0",
+  "description": "TypeScript configuration shared across projects in Apify.",
+  "author": "Vlad Frangu <vlad.frangu@apify.com>",
+  "license": "Apache-2.0",
+  "main": "tsconfig.json",
+  "exports": {
+    "import": "./tsconfig.json",
+    "require": "./tsconfig.json"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "test $RUNNING_FROM_SCRIPT || (echo \"You must use publish.sh instead of 'npm publish' directly!\"; exit 1)"
+  },
+  "files": [
+    "tsconfig.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apify/apify-tsconfig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apify/apify-tsconfig"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

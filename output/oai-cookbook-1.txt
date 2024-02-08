@@ -1,0 +1,8700 @@
+openai-cookbook/examples/vector_databases/redis/redisqna/assets at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/redis/redisqna/assets
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+redisjson
+redisqna
+assets
+001.txt
+002.txt
+003.txt
+004.txt
+005.txt
+006.txt
+007.txt
+008.txt
+009.txt
+010.txt
+011.txt
+012.txt
+013.txt
+docker-compose.yml
+redisqna.ipynb
+README.md
+Using_Redis_for_embeddings_search.ipynb
+docker-compose.yml
+getting-started-with-redis-and-openai.ipynb
+nbutils.py
+redis-hybrid-query-examples.ipynb
+redis.conf
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases/redis/redisqna
+/assets/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+001.txt
+	
+ 
+	
+ 
+
+
+002.txt
+	
+ 
+	
+ 
+
+
+003.txt
+	
+ 
+	
+ 
+
+
+004.txt
+	
+ 
+	
+ 
+
+
+005.txt
+	
+ 
+	
+ 
+
+
+006.txt
+	
+ 
+	
+ 
+
+
+007.txt
+	
+ 
+	
+ 
+
+
+008.txt
+	
+ 
+	
+ 
+
+
+009.txt
+	
+ 
+	
+ 
+
+
+010.txt
+	
+ 
+	
+ 
+
+
+011.txt
+	
+ 
+	
+ 
+
+
+012.txt
+	
+ 
+	
+ 
+
+
+013.txt
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/redis/redisqna at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/redis/redisqna
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+redisjson
+redisqna
+assets
+docker-compose.yml
+redisqna.ipynb
+README.md
+Using_Redis_for_embeddings_search.ipynb
+docker-compose.yml
+getting-started-with-redis-and-openai.ipynb
+nbutils.py
+redis-hybrid-query-examples.ipynb
+redis.conf
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases/redis
+/redisqna/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+assets
+	
+ 
+	
+ 
+
+
+docker-compose.yml
+	
+ 
+	
+ 
+
+
+redisqna.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/redis/redisjson at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/redis/redisjson
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+redisjson
+docker-compose.yml
+redisjson.ipynb
+redisqna
+README.md
+Using_Redis_for_embeddings_search.ipynb
+docker-compose.yml
+getting-started-with-redis-and-openai.ipynb
+nbutils.py
+redis-hybrid-query-examples.ipynb
+redis.conf
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases/redis
+/redisjson/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+docker-compose.yml
+	
+ 
+	
+ 
+
+
+redisjson.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/kusto/images at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/kusto/images
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+images
+kusto_vector_db.png
+semantic_search_user_flow.png
+wiki_embeddings.png
+Getting_started_with_kusto_and_openai_embeddings.ipynb
+README.md
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases/kusto
+/images/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+kusto_vector_db.png
+	
+ 
+	
+ 
+
+
+semantic_search_user_flow.png
+	
+ 
+	
+ 
+
+
+wiki_embeddings.png
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/cassandra_astradb/sources at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/cassandra_astradb/sources
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+sources
+philo_quotes.json
+Philosophical_Quotes_AstraPy.ipynb
+Philosophical_Quotes_CQL.ipynb
+Philosophical_Quotes_cassIO.ipynb
+README.md
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases/cassandra_astradb
+/sources/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+philo_quotes.json
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/dalle/images/03_edits at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/dalle/images/03_edits
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+images
+01_generations
+02_masks
+03_edits
+edits_0.png
+edits_1.png
+edits_2.png
+edits_3.png
+How_to_create_dynamic_masks_with_DALL-E_and_Segment_Anything.ipynb
+Image_generations_edits_and_variations_with_DALL-E.ipynb
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/dalle/images
+/03_edits/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+edits_0.png
+	
+ 
+	
+ 
+
+
+edits_1.png
+	
+ 
+	
+ 
+
+
+edits_2.png
+	
+ 
+	
+ 
+
+
+edits_3.png
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/dalle/images/02_masks at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/dalle/images/02_masks
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+images
+01_generations
+02_masks
+new_mask.png
+03_edits
+How_to_create_dynamic_masks_with_DALL-E_and_Segment_Anything.ipynb
+Image_generations_edits_and_variations_with_DALL-E.ipynb
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/dalle/images
+/02_masks/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+new_mask.png
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/dalle/images/01_generations at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/dalle/images/01_generations
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+images
+01_generations
+generation_1.png
+generation_2.png
+generation_3.png
+02_masks
+03_edits
+How_to_create_dynamic_masks_with_DALL-E_and_Segment_Anything.ipynb
+Image_generations_edits_and_variations_with_DALL-E.ipynb
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/dalle/images
+/01_generations/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+generation_1.png
+	
+ 
+	
+ 
+
+
+generation_2.png
+	
+ 
+	
+ 
+
+
+generation_3.png
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/zilliz at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/zilliz
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+Filtered_search_with_Zilliz_and_OpenAI.ipynb
+Getting_started_with_Zilliz_and_OpenAI.ipynb
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/zilliz/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Filtered_search_with_Zilliz_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+Getting_started_with_Zilliz_and_OpenAI.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/weaviate at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/weaviate
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+README.md
+Using_Weaviate_for_embeddings_search.ipynb
+docker-compose.yml
+generative-search-with-weaviate-and-openai.ipynb
+getting-started-with-weaviate-and-openai.ipynb
+hybrid-search-with-weaviate-and-openai.ipynb
+question-answering-with-weaviate-and-openai.ipynb
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/weaviate/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+README.md
+	
+ 
+	
+ 
+
+
+Using_Weaviate_for_embeddings_search.ipynb
+	
+ 
+	
+ 
+
+
+docker-compose.yml
+	
+ 
+	
+ 
+
+
+generative-search-with-weaviate-and-openai.ipynb
+	
+ 
+	
+ 
+
+
+getting-started-with-weaviate-and-openai.ipynb
+	
+ 
+	
+ 
+
+
+hybrid-search-with-weaviate-and-openai.ipynb
+	
+ 
+	
+ 
+
+
+question-answering-with-weaviate-and-openai.ipynb
+	
+ 
+	
+ 
+README.md
+Weaviate <> OpenAI
+
+​Weaviate is an open-source vector search engine (docs - Github) that can store and search through OpenAI embeddings and data objects. The database allows you to do similarity search, hybrid search (the combining of multiple search techniques, such as keyword-based and vector search), and generative search (like Q&A). Weaviate also supports a wide variety of OpenAI-based modules (e.g., text2vec-openai, qna-openai), allowing you to vectorize and query data fast and efficiently.
+
+You can run Weaviate (including the OpenAI modules if desired) in three ways:
+
+Open source inside a Docker-container (example)
+Using the Weaviate Cloud Service (get started)
+In a Kubernetes cluster (learn more)
+Examples
+
+This folder contains a variety of Weaviate and OpenAI examples.
+
+Name	Description	language	Google Colab
+Getting Started with Weaviate and OpenAI	A simple getting started for semantic vector search using the OpenAI vectorization module in Weaviate (text2vec-openai)	Python Notebook	link
+Hybrid Search with Weaviate and OpenAI	A simple getting started for hybrid search using the OpenAI vectorization module in Weaviate (text2vec-openai)	Python Notebook	link
+Question Answering with Weaviate and OpenAI	A simple getting started for question answering (Q&A) using the OpenAI Q&A module in Weaviate (qna-openai)	Python Notebook	link
+Docker-compose example	A Docker-compose file with all OpenAI modules enabled	Docker	
+ 
+
+openai-cookbook/examples/vector_databases/typesense at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/typesense
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+.gitignore
+README.md
+Using_Typesense_for_embeddings_search.ipynb
+docker-compose.yml
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/typesense/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+.gitignore
+	
+ 
+	
+ 
+
+
+README.md
+	
+ 
+	
+ 
+
+
+Using_Typesense_for_embeddings_search.ipynb
+	
+ 
+	
+ 
+
+
+docker-compose.yml
+	
+ 
+	
+ 
+README.md
+Typesense
+
+Typesense is an open source, in-memory search engine, that you can either self-host or run on Typesense Cloud.
+
+Why Typesense?
+
+Typesense focuses on performance by storing the entire index in RAM (with a backup on disk) and also focuses on providing an out-of-the-box developer experience by simplifying available options and setting good defaults.
+
+It also lets you combine attribute-based filtering together with vector queries, to fetch the most relevant documents.
+
+Other features
+
+Besides vector storage and search, Typesense also offers the following features:
+
+Typo Tolerance: Handles typographical errors elegantly, out-of-the-box.
+Tunable Ranking: Easy to tailor your search results to perfection.
+Sorting: Dynamically sort results based on a particular field at query time (helpful for features like "Sort by Price (asc)").
+Faceting & Filtering: Drill down and refine results.
+Grouping & Distinct: Group similar results together to show more variety.
+Federated Search: Search across multiple collections (indices) in a single HTTP request.
+Scoped API Keys: Generate API keys that only allow access to certain records, for multi-tenant applications.
+Synonyms: Define words as equivalents of each other, so searching for a word will also return results for the synonyms defined.
+Curation & Merchandizing: Boost particular records to a fixed position in the search results, to feature them.
+Raft-based Clustering: Set up a distributed cluster that is highly available.
+Seamless Version Upgrades: As new versions of Typesense come out, upgrading is as simple as swapping out the binary and restarting Typesense.
+No Runtime Dependencies: Typesense is a single binary that you can run locally or in production with a single command.
+How To
+To learn more about how to use Typesense with OpenAI embeddings, see the notebook here for an example: examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb
+To learn more about Typesense's vector search feature, read the docs here: https://typesense.org/docs/0.24.1/api/vector-search.html.
+ 
+
+openai-cookbook/examples/vector_databases/tair at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/tair
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+Getting_started_with_Tair_and_OpenAI.ipynb
+QA_with_Langchain_Tair_and_OpenAI.ipynb
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/tair/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_Tair_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+QA_with_Langchain_Tair_and_OpenAI.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/supabase at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/supabase
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+README.md
+semantic-search.mdx
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/supabase/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+README.md
+	
+ 
+	
+ 
+
+
+semantic-search.mdx
+	
+ 
+	
+ 
+README.md
+Supabase Vector Database
+
+Supabase is an open-source Firebase alternative built on top of Postgres, a production-grade SQL database.
+
+Supabase Vector is a vector toolkit built on pgvector, a Postgres extension that allows you to store your embeddings inside the same database that holds the rest of your application data. When combined with pgvector's indexing algorithms, vector search remains fast at large scales.
+
+Supabase adds an ecosystem of services and tools on top of Postgres that makes app development as quick as possible, including:
+
+Auto-generated REST APIs
+Auto-generated GraphQL APIs
+Realtime APIs
+Authentication
+File storage
+Edge functions
+
+We can use these services alongside pgvector to store and query embeddings within Postgres.
+
+OpenAI Cookbook Examples
+
+Below are guides and resources that walk you through how to use OpenAI embedding models with Supabase Vector.
+
+Guide	Description
+Semantic search	Store, index, and query embeddings at scale using pgvector
+Additional resources
+Vector columns
+Vector indexes
+RAG with permissions
+Going to production
+Deciding on compute
+ 
+
+openai-cookbook/examples/vector_databases/redis at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/redis
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+redisjson
+redisqna
+README.md
+Using_Redis_for_embeddings_search.ipynb
+docker-compose.yml
+getting-started-with-redis-and-openai.ipynb
+nbutils.py
+redis-hybrid-query-examples.ipynb
+redis.conf
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/redis/
+Directory actions
+More options
+Latest commit
+logankilpatrick
+Misc updates (#1022)
+f1e13cf
+ · 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+redisjson
+	
+ 
+	
+ 
+
+
+redisqna
+	
+ 
+	
+ 
+
+
+README.md
+	
+ 
+	
+ 
+
+
+Using_Redis_for_embeddings_search.ipynb
+	
+ 
+	
+ 
+
+
+docker-compose.yml
+	
+ 
+	
+ 
+
+
+getting-started-with-redis-and-openai.ipynb
+	
+ 
+	
+ 
+
+
+nbutils.py
+	
+ 
+	
+ 
+
+
+redis-hybrid-query-examples.ipynb
+	
+ 
+	
+ 
+
+
+redis.conf
+	
+ 
+	
+ 
+README.md
+Redis
+What is Redis?
+
+Most developers from a web services background are probably familiar with Redis. At it's core, Redis is an open-source key-value store that can be used as a cache, message broker, and database. Developers choice Redis because it is fast, has a large ecosystem of client libraries, and has been deployed by major enterprises for years.
+
+In addition to the traditional uses of Redis. Redis also provides Redis Modules which are a way to extend Redis with new capabilities, commands and data types. Example modules include RedisJSON, RedisTimeSeries, RedisBloom and RediSearch.
+
+Deployment options
+
+There are a number of ways to deploy Redis. For local development, the quickest method is to use the Redis Stack docker container which we will use here. Redis Stack contains a number of Redis modules that can be used together to create a fast, multi-model data store and query engine.
+
+For production use cases, The easiest way to get started is to use the Redis Cloud service. Redis Cloud is a fully managed Redis service. You can also deploy Redis on your own infrastructure using Redis Enterprise. Redis Enterprise is a fully managed Redis service that can be deployed in kubernetes, on-premises or in the cloud.
+
+Additionally, every major cloud provider (AWS Marketplace, Google Marketplace, or Azure Marketplace) offers Redis Enterprise in a marketplace offering.
+
+What is RediSearch?
+
+RediSearch is a Redis module that provides querying, secondary indexing, full-text search and vector search for Redis. To use RediSearch, you first declare indexes on your Redis data. You can then use the RediSearch clients to query that data. For more information on the feature set of RediSearch, see the RediSearch documentation.
+
+Features
+
+RediSearch uses compressed, inverted indexes for fast indexing with a low memory footprint. RediSearch indexes enhance Redis by providing exact-phrase matching, fuzzy search, and numeric filtering, among many other features. Such as:
+
+Full-Text indexing of multiple fields in Redis hashes
+Incremental indexing without performance loss
+Vector similarity search
+Document ranking (using tf-idf, with optional user-provided weights)
+Field weighting
+Complex boolean queries with AND, OR, and NOT operators
+Prefix matching, fuzzy matching, and exact-phrase queries
+Support for double-metaphone phonetic matching
+Auto-complete suggestions (with fuzzy prefix suggestions)
+Stemming-based query expansion in many languages (using Snowball)
+Support for Chinese-language tokenization and querying (using Friso)
+Numeric filters and ranges
+Geospatial searches using Redis geospatial indexing
+A powerful aggregations engine
+Supports for all utf-8 encoded text
+Retrieve full documents, selected fields, or only the document IDs
+Sorting results (for example, by creation date)
+JSON support through RedisJSON
+Clients
+
+Given the large ecosystem around Redis, there are most likely client libraries in the language you need. You can use any standard Redis client library to run RediSearch commands, but it's easiest to use a library that wraps the RediSearch API. Below are a few examples, but you can find more client libraries here.
+
+Project	Language	License	Author	Stars
+jedis	Java	MIT	Redis	
+redis-py	Python	MIT	Redis	
+node-redis	Node.js	MIT	Redis	
+nredisstack	.NET	MIT	Redis	
+Deployment Options
+
+There are many ways to deploy Redis with RediSearch. The easiest way to get started is to use Docker, but there are are many potential options for deployment such as
+
+Redis Cloud
+Cloud marketplaces: AWS Marketplace, Google Marketplace, or Azure Marketplace
+On-premise: Redis Enterprise Software
+Kubernetes: Redis Enterprise Software on Kubernetes
+Docker (RediSearch)
+Docker (Redis Stack)
+Cluster support
+
+RediSearch has a distributed cluster version that scales to billions of documents across hundreds of servers. At the moment, distributed RediSearch is available as part of Redis Enterprise Cloud and Redis Enterprise Software.
+
+See RediSearch on Redis Enterprise for more information.
+
+Examples
+Product Search - eCommerce product search (with image and text)
+Product Recommendations with DocArray / Jina - Content-based product recommendations example with Redis and DocArray.
+Redis VSS in RecSys - 3 end-to-end Redis & NVIDIA Merlin Recommendation System Architectures.
+Azure OpenAI Embeddings Q&A - OpenAI and Redis as a Q&A service on Azure.
+ArXiv Paper Search - Semantic search over arXiv scholarly papers
+More Resources
+
+For more information on how to use Redis as a vector database, check out the following resources:
+
+Redis Vector Similarity Docs - Redis official docs for Vector Search.
+Redis-py Search Docs - Redis-py client library docs for RediSearch.
+Vector Similarity Search: From Basics to Production - Introductory blog post to VSS and Redis as a VectorDB.
+AI-Powered Document Search - Blog post covering AI Powered Document Search Use Cases & Architectures.
+Vector Database Benchmarks - Jina AI VectorDB benchmarks comparing Redis against others.
+ 
+
+openai-cookbook/examples/vector_databases/qdrant at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/qdrant
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+Getting_started_with_Qdrant_and_OpenAI.ipynb
+QA_with_Langchain_Qdrant_and_OpenAI.ipynb
+Using_Qdrant_for_embeddings_search.ipynb
+docker-compose.yaml
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/qdrant/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_Qdrant_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+QA_with_Langchain_Qdrant_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+Using_Qdrant_for_embeddings_search.ipynb
+	
+ 
+	
+ 
+
+
+docker-compose.yaml
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/pinecone at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/pinecone
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+GPT4_Retrieval_Augmentation.ipynb
+Gen_QA.ipynb
+README.md
+Semantic_Search.ipynb
+Using_Pinecone_for_embeddings_search.ipynb
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/pinecone/
+Directory actions
+More options
+Latest commit
+logankilpatrick
+Misc updates (#1022)
+f1e13cf
+ · 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+GPT4_Retrieval_Augmentation.ipynb
+	
+Misc updates (#1022)
+	
+
+
+Gen_QA.ipynb
+	
+Misc updates (#1022)
+	
+
+
+README.md
+	
+added new notebooks
+	
+
+
+Semantic_Search.ipynb
+	
+Misc updates (#1022)
+	
+
+
+Using_Pinecone_for_embeddings_search.ipynb
+	
+Misc updates (#1022)
+	
+README.md
+Pinecone Vector Database
+
+Vector search is an innovative technology that enables developers and engineers to efficiently store, search, and recommend information by representing complex data as mathematical vectors. By comparing the similarities between these vectors, you can quickly retrieve relevant information in a seamless and intuitive manner.
+
+Pinecone is a vector database designed with developers and engineers in mind. As a managed service, it alleviates the burden of maintenance and engineering, allowing you to focus on extracting valuable insights from your data. The free tier supports up to 5 million vectors, making it an accessible and cost-effective way to experiment with vector search capabilities. With Pinecone, you'll experience impressive speed, accuracy, and scalability, as well as access to advanced features like single-stage metadata filtering and the cutting-edge sparse-dense index.
+
+Examples
+
+This folder contains examples of using Pinecone and OpenAI together. More will be added over time so check back for updates!
+
+Name	Description	Google Colab
+GPT-4 Retrieval Augmentation	How to supercharge GPT-4 with retrieval augmentation	
+Generative Question-Answering	A simple walkthrough demonstrating the use of Generative Question-Answering	
+Semantic Search	A guide to building a simple semantic search process	
+
+openai-cookbook/examples/vector_databases/neon at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/neon
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+README.md
+neon-postgres-vector-search-pgvector.ipynb
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/neon/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+README.md
+	
+ 
+	
+ 
+
+
+neon-postgres-vector-search-pgvector.ipynb
+	
+ 
+	
+ 
+README.md
+What is Neon?
+
+Neon is Serverless Postgres built for the cloud. Neon separates compute and storage to offer modern developer features such as autoscaling, database branching, scale-to-zero, and more.
+
+Vector search
+
+Neon supports vector search using the pgvector open-source PostgreSQL extension, which enables Postgres as a vector database for storing and querying embeddings.
+
+OpenAI cookbook notebook
+
+Check out the notebook in this repo for working with Neon Serverless Postgres as your vector database.
+
+Semantic search using Neon Postgres with pgvector and OpenAI
+
+In this notebook you will learn how to:
+
+Use embeddings created by OpenAI API
+Store embeddings in a Neon Serverless Postgres database
+Convert a raw text query to an embedding with OpenAI API
+Use Neon with the pgvector extension to perform vector similarity search
+Scaling Support
+
+Neon enables you to scale your AI applications with the following features:
+
+Autoscaling: If your AI application experiences heavy load during certain hours of the day or at different times, Neon can automatically scale compute resources without manual intervention. During periods of inactivity, Neon is able to scale to zero.
+Instant read replicas: Neon supports instant read replicas, which are independent read-only compute instances designed to perform read operations on the same data as your read-write computes. With read replicas, you can offload reads from your read-write compute instance to a dedicated read-only compute instance for your AI application.
+The Neon serverless driver: Neon supports a low-latency serverless PostgreSQL driver for JavaScript and TypeScript applications that allows you to query data from serverless and edge environments, making it possible to achieve sub-10ms queries.
+More Examples
+Build an AI-powered semantic search application - Submit a startup idea and get a list of similar ideas that YCombinator has invested in before
+Build an AI-powered chatbot - A Postgres Q&A chatbot that uses Postgres as a vector database
+Vercel Postgres pgvector Starter - Vector similarity search with Vercel Postgres (powered by Neon)
+Additional Resources
+Building AI applications with Neon
+Neon AI & embeddings documentation
+Building an AI-powered Chatbot using Vercel, OpenAI, and Postgres
+Web-based AI SQL Playground and connecting to Postgres from the browser
+pgvector GitHub repository
+ 
+
+openai-cookbook/examples/vector_databases/myscale at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/myscale
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+Getting_started_with_MyScale_and_OpenAI.ipynb
+Using_MyScale_for_embeddings_search.ipynb
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/myscale/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_MyScale_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+Using_MyScale_for_embeddings_search.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/kusto at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/kusto
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+images
+Getting_started_with_kusto_and_openai_embeddings.ipynb
+README.md
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/kusto/
+Directory actions
+More options
+Latest commit
+logankilpatrick
+Misc updates (#1022)
+f1e13cf
+ · 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+images
+	
+kusto vector sample added
+	
+
+
+Getting_started_with_kusto_and_openai_embeddings.ipynb
+	
+Misc updates (#1022)
+	
+
+
+README.md
+	
+kusto vector sample added
+	
+README.md
+Kusto as a Vector database
+
+Azure Data Explorer aka Kusto is a cloud-based data analytics service that enables users to perform advanced analytics on large datasets in real-time. It is particularly well-suited for handling large volumes of data, making it an excellent choice for storing and searching vectors.
+
+Kusto supports a special data type called dynamic, which can store unstructured data such as arrays and properties bag. Dynamic data type is perfect for storing vector values. You can further augment the vector value by storing metadata related to the original object as separate columns in your table.
+Kusto also supports in-built function series_cosine_similarity_fl to perform vector similarity searches.
+
+Get started with Kusto for free.
+
+Getting started with Kusto and Open AI embedding
+Demo Scenario
+
+If you’d like to try this demo, please follow the instructions in the Notebook.
+
+It will allow you to -
+
+Use precomputed embeddings created by OpenAI API.
+
+Store the embeddings in Kusto.
+
+Convert raw text query to an embedding with OpenAI API.
+
+Use Kusto to perform cosine similarity search in the stored embeddings.
+
+openai-cookbook/examples/vector_databases/mongodb_atlas at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/mongodb_atlas
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+README.md
+semantic_search_using_mongodb_atlas_vector_search.ipynb
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/mongodb_atlas/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+README.md
+	
+ 
+	
+ 
+
+
+semantic_search_using_mongodb_atlas_vector_search.ipynb
+	
+ 
+	
+ 
+README.md
+MongoDB Atlas Vector Search
+
+Atlas Vector Search is a fully managed service that simplifies the process of effectively indexing high-dimensional vector data within MongoDB and being able to perform fast vector similarity searches. With Atlas Vector Search, you can use MongoDB as a standalone vector database for a new project or augment your existing MongoDB collections with vector search functionality. With Atlas Vector Search, you can use the powerful capabilities of vector search in any major public cloud (AWS, Azure, GCP) and achieve massive scalability and data security out of the box while being enterprise-ready with provisions like FedRamp, SoC2 compliance.
+
+Documentation - link
+
+ 
+
+openai-cookbook/examples/vector_databases/milvus at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/milvus
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+Filtered_search_with_Milvus_and_OpenAI.ipynb
+Getting_started_with_Milvus_and_OpenAI.ipynb
+docker-compose.yaml
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/milvus/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Filtered_search_with_Milvus_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+Getting_started_with_Milvus_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+docker-compose.yaml
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/hologres at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/hologres
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+Getting_started_with_Hologres_and_OpenAI.ipynb
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/hologres/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_Hologres_and_OpenAI.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/elasticsearch at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/elasticsearch
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+README.md
+elasticsearch-retrieval-augmented-generation.ipynb
+elasticsearch-semantic-search.ipynb
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/elasticsearch/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+README.md
+	
+ 
+	
+ 
+
+
+elasticsearch-retrieval-augmented-generation.ipynb
+	
+ 
+	
+ 
+
+
+elasticsearch-semantic-search.ipynb
+	
+ 
+	
+ 
+README.md
+Elasticsearch
+
+Elasticsearch is a popular search/analytics engine and vector database. Elasticsearch offers an efficient way to create, store, and search vector embeddings at scale.
+
+For technical details, refer to the Elasticsearch documentation.
+
+The elasticsearch-labs repo contains executable Python notebooks, sample apps, and resources for testing out the Elastic platform.
+
+OpenAI cookbook notebooks 📒
+
+Check out our notebooks in this repo for working with OpenAI, using Elasticsearch as your vector database.
+
+Semantic search
+
+In this notebook you'll learn how to:
+
+Index the OpenAI Wikipedia embeddings dataset into Elasticsearch
+Encode a question with the openai ada-02 model
+Perform a semantic search
+Retrieval augmented generation
+
+This notebooks builds on the semantic search notebook by:
+
+Selecting the top hit from a semantic search
+Sending that result to the OpenAI Chat Completions API endpoint for retrieval augmented generation (RAG)
+ 
+
+openai-cookbook/examples/vector_databases/deeplake at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/deeplake
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+deeplake_langchain_qa.ipynb
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/deeplake/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+deeplake_langchain_qa.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/cassandra_astradb at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/cassandra_astradb
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+sources
+Philosophical_Quotes_AstraPy.ipynb
+Philosophical_Quotes_CQL.ipynb
+Philosophical_Quotes_cassIO.ipynb
+README.md
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/cassandra_astradb/
+Directory actions
+More options
+Latest commit
+logankilpatrick
+Misc updates (#1022)
+f1e13cf
+ · 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+sources
+	
+Add Astra DB (/Cassandra) to vector databases with example notebooks (#…
+	
+
+
+Philosophical_Quotes_AstraPy.ipynb
+	
+Misc updates (#1022)
+	
+
+
+Philosophical_Quotes_CQL.ipynb
+	
+Misc updates (#1022)
+	
+
+
+Philosophical_Quotes_cassIO.ipynb
+	
+Misc updates (#1022)
+	
+
+
+README.md
+	
+Cassandra / Astra DB demo notebooks: adapt to OpenAI 1.0, add support…
+	
+README.md
+RAG with Astra DB and Cassandra
+
+The demos in this directory show how to use the Vector Search capabilities available today in DataStax Astra DB, a serverless Database-as-a-Service built on Apache Cassandra®.
+
+These example notebooks demonstrate implementation of the same GenAI standard RAG workload with different libraries and APIs.
+
+To use Astra DB with its HTTP API interface, head to the "AstraPy" notebook (astrapy is the Python client to interact with the database).
+
+If you prefer CQL access to the database (either with Astra DB or a Cassandra cluster supporting vector search), check the "CQL" or "CassIO" notebooks -- they differ in the level of abstraction you get to work at.
+
+If you want to know more about Astra DB and its Vector Search capabilities, head over to datastax.com.
+
+Example notebooks
+
+The following examples show how easily OpenAI and DataStax Astra DB can work together to power vector-based AI applications. You can run them either with your local Jupyter engine or as Colab notebooks:
+
+Use case	Target database	Framework	Notebook	Google Colab
+Search/generate quotes	Astra DB	AstraPy	Notebook	
+Search/generate quotes	Cassandra / Astra DB through CQL	CassIO	Notebook	
+Search/generate quotes	Cassandra / Astra DB through CQL	Plain Cassandra language	Notebook	
+Vector similarity, visual representation
+
+openai-cookbook/examples/vector_databases/chroma at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/chroma
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+Using_Chroma_for_embeddings_search.ipynb
+hyde-with-chroma-and-openai.ipynb
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/chroma/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Using_Chroma_for_embeddings_search.ipynb
+	
+ 
+	
+ 
+
+
+hyde-with-chroma-and-openai.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/azuresearch at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/azuresearch
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+Getting_started_with_azure_cognitive_search_and_openai.ipynb
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/azuresearch/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_azure_cognitive_search_and_openai.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/SingleStoreDB at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/SingleStoreDB
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+OpenAI_wikipedia_semantic_search.ipynb
+README.md
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/SingleStoreDB/
+Directory actions
+More options
+Latest commit
+logankilpatrick
+Misc updates (#1022)
+f1e13cf
+ · 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+OpenAI_wikipedia_semantic_search.ipynb
+	
+Misc updates (#1022)
+	
+
+
+README.md
+	
+Adding SingleStoreDB as a vector database with Python notebook (#402)
+	
+README.md
+
+SingleStoreDB has first-class support for vector search through our Vector Functions. Our vector database subsystem, first made available in 2017 and subsequently enhanced, allows extremely fast nearest-neighbor search to find objects that are semantically similar, easily using SQL.
+
+SingleStoreDB supports vectors and vector similarity search using dot_product (for cosine similarity) and euclidean_distance functions. These functions are used by our customers for applications including face recognition, visual product photo search and text-based semantic search. With the explosion of generative AI technology, these capabilities form a firm foundation for text-based AI chatbots.
+
+But remember, SingleStoreDB is a high-performance, scalable, modern SQL DBMS that supports multiple data models including structured data, semi-structured data based on JSON, time-series, full text, spatial, key-value and of course vector data. Start powering your next intelligent application with SingleStoreDB today!
+
+Example
+
+This folder contains examples of using SingleStoreDB and OpenAI together. We will keep adding more scenarios so stay tuned!
+
+Name	Description
+OpenAI wikipedia semantic search	Improve ChatGPT accuracy through SingleStoreDB semantic Search in QA
+
+openai-cookbook/examples/vector_databases/analyticdb at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/analyticdb
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+Getting_started_with_AnalyticDB_and_OpenAI.ipynb
+QA_with_Langchain_AnalyticDB_and_OpenAI.ipynb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/analyticdb/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_AnalyticDB_and_OpenAI.ipynb
+	
+ 
+	
+ 
+
+
+QA_with_Langchain_AnalyticDB_and_OpenAI.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases/PolarDB at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases/PolarDB
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+Getting_started_with_PolarDB_and_OpenAI.ipynb
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/vector_databases
+/PolarDB/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Getting_started_with_PolarDB_and_OpenAI.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/data/papers at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/data/papers
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+10k
+papers
+.gitkeep
+25000_spend_dataset_current.csv
+AG_news_samples.csv
+Chinook.db
+NotRealCorp_financial_data.json
+amazon_product_kg.json
+bison.mp4
+cookbook_recipes_nlg_10k.csv
+created_slides.pptx
+dbpedia_samples.jsonl
+example_events_openapi.json
+example_requests_to_parallel_process.jsonl
+fia_f1_power_unit_financial_regulations_issue_1_-_2022-08-16.pdf
+fine_food_reviews_1k.csv
+fine_food_reviews_with_embeddings_1k.csv
+labelled_transactions.csv
+language_models_are_unsupervised_multitask_learners.pdf
+library_transactions_with_embeddings_359.csv
+marketing_sample_for_amazon_com-ecommerce__20200101_20200131__10k_data.csv
+recommendations_embeddings_cache.pkl
+scifact_claims.jsonl
+scifact_corpus.jsonl
+snli_1.0_train_2k.csv
+styles_2k.csv
+styles_44k.csv
+toy_chat_fine_tuning.jsonl
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/data
+/papers/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+.gitkeep
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/data/10k at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/data/10k
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+10k
+lyft_2021.pdf
+uber_2021.pdf
+papers
+25000_spend_dataset_current.csv
+AG_news_samples.csv
+Chinook.db
+NotRealCorp_financial_data.json
+amazon_product_kg.json
+bison.mp4
+cookbook_recipes_nlg_10k.csv
+created_slides.pptx
+dbpedia_samples.jsonl
+example_events_openapi.json
+example_requests_to_parallel_process.jsonl
+fia_f1_power_unit_financial_regulations_issue_1_-_2022-08-16.pdf
+fine_food_reviews_1k.csv
+fine_food_reviews_with_embeddings_1k.csv
+labelled_transactions.csv
+language_models_are_unsupervised_multitask_learners.pdf
+library_transactions_with_embeddings_359.csv
+marketing_sample_for_amazon_com-ecommerce__20200101_20200131__10k_data.csv
+recommendations_embeddings_cache.pkl
+scifact_claims.jsonl
+scifact_corpus.jsonl
+snli_1.0_train_2k.csv
+styles_2k.csv
+styles_44k.csv
+toy_chat_fine_tuning.jsonl
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/data
+/10k/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+lyft_2021.pdf
+	
+ 
+	
+ 
+
+
+uber_2021.pdf
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/dalle/images at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/dalle/images
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+images
+01_generations
+02_masks
+03_edits
+How_to_create_dynamic_masks_with_DALL-E_and_Segment_Anything.ipynb
+Image_generations_edits_and_variations_with_DALL-E.ipynb
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/dalle
+/images/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+01_generations
+	
+ 
+	
+ 
+
+
+02_masks
+	
+ 
+	
+ 
+
+
+03_edits
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/book_translation/data at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/book_translation/data
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+data
+geometry_English.tex
+geometry_slovenian.tex
+translate_latex_book.ipynb
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/book_translation
+/data/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+geometry_English.tex
+	
+ 
+	
+ 
+
+
+geometry_slovenian.tex
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/azure/archive at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/azure/archive
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+archive
+DALL-E.ipynb
+chat.ipynb
+chat_with_your_own_data.ipynb
+completions.ipynb
+embeddings.ipynb
+functions.ipynb
+whisper.ipynb
+chat.ipynb
+chat_with_your_own_data.ipynb
+embeddings.ipynb
+functions.ipynb
+whisper.ipynb
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples/azure
+/archive/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+DALL-E.ipynb
+	
+ 
+	
+ 
+
+
+chat.ipynb
+	
+ 
+	
+ 
+
+
+chat_with_your_own_data.ipynb
+	
+ 
+	
+ 
+
+
+completions.ipynb
+	
+ 
+	
+ 
+
+
+embeddings.ipynb
+	
+ 
+	
+ 
+
+
+functions.ipynb
+	
+ 
+	
+ 
+
+
+whisper.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/vector_databases at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/vector_databases
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+PolarDB
+SingleStoreDB
+analyticdb
+azuresearch
+cassandra_astradb
+chroma
+deeplake
+elasticsearch
+hologres
+kusto
+milvus
+mongodb_atlas
+myscale
+neon
+pinecone
+qdrant
+redis
+supabase
+tair
+typesense
+weaviate
+zilliz
+README.md
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/vector_databases/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+PolarDB
+	
+ 
+	
+ 
+
+
+SingleStoreDB
+	
+ 
+	
+ 
+
+
+analyticdb
+	
+ 
+	
+ 
+
+
+azuresearch
+	
+ 
+	
+ 
+
+
+cassandra_astradb
+	
+ 
+	
+ 
+
+
+chroma
+	
+ 
+	
+ 
+
+
+deeplake
+	
+ 
+	
+ 
+
+
+elasticsearch
+	
+ 
+	
+ 
+
+
+hologres
+	
+ 
+	
+ 
+
+
+kusto
+	
+ 
+	
+ 
+
+
+milvus
+	
+ 
+	
+ 
+
+
+mongodb_atlas
+	
+ 
+	
+ 
+
+
+myscale
+	
+ 
+	
+ 
+
+
+neon
+	
+ 
+	
+ 
+
+
+pinecone
+	
+ 
+	
+ 
+
+
+qdrant
+	
+ 
+	
+ 
+
+
+redis
+	
+ 
+	
+ 
+
+
+supabase
+	
+ 
+	
+ 
+
+
+tair
+	
+ 
+	
+ 
+
+
+typesense
+	
+ 
+	
+ 
+
+
+weaviate
+	
+ 
+	
+ 
+
+
+zilliz
+	
+ 
+	
+ 
+
+
+README.md
+	
+ 
+	
+ 
+README.md
+Vector Databases
+
+This section of the OpenAI Cookbook showcases many of the vector databases available to support your semantic search use cases.
+
+Vector databases can be a great accompaniment for knowledge retrieval applications, which reduce hallucinations by providing the LLM with the relevant context to answer questions.
+
+Each provider has their own named directory, with a standard notebook to introduce you to using our API with their product, and any supplementary notebooks they choose to add to showcase their functionality.
+
+Guides & deep dives
+AnalyticDB
+Cassandra/Astra DB
+AzureSearch
+Chroma
+Elasticsearch
+Hologres
+Kusto
+Milvus
+MyScale
+MongoDB
+Neon Postgres
+Pinecone
+PolarDB
+Qdrant
+Redis
+SingleStoreDB
+Supabase
+Tembo
+Typesense
+Weaviate
+Zilliz
+ 
+
+openai-cookbook/examples/utils at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/utils
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+embeddings_utils.py
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/utils/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+embeddings_utils.py
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/third_party at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/third_party
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+GPT_finetuning_with_wandb.ipynb
+How_to_automate_S3_storage_with_functions.ipynb
+Openai_monitoring_with_wandb_weave.ipynb
+Visualizing_embeddings_in_Kangas.ipynb
+Visualizing_embeddings_in_wandb.ipynb
+Visualizing_embeddings_with_Atlas.ipynb
+financial_document_analysis_with_llamaindex.ipynb
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/third_party/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+GPT_finetuning_with_wandb.ipynb
+	
+ 
+	
+ 
+
+
+How_to_automate_S3_storage_with_functions.ipynb
+	
+ 
+	
+ 
+
+
+Openai_monitoring_with_wandb_weave.ipynb
+	
+ 
+	
+ 
+
+
+Visualizing_embeddings_in_Kangas.ipynb
+	
+ 
+	
+ 
+
+
+Visualizing_embeddings_in_wandb.ipynb
+	
+ 
+	
+ 
+
+
+Visualizing_embeddings_with_Atlas.ipynb
+	
+ 
+	
+ 
+
+
+financial_document_analysis_with_llamaindex.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/fine-tuned_qa at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/fine-tuned_qa
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+answers_with_ft.py
+ft_retrieval_augmented_generation_qdrant.ipynb
+olympics-1-collect-data.ipynb
+olympics-2-create-qa.ipynb
+olympics-3-train-qa.ipynb
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/fine-tuned_qa/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+answers_with_ft.py
+	
+ 
+	
+ 
+
+
+ft_retrieval_augmented_generation_qdrant.ipynb
+	
+ 
+	
+ 
+
+
+olympics-1-collect-data.ipynb
+	
+ 
+	
+ 
+
+
+olympics-2-create-qa.ipynb
+	
+ 
+	
+ 
+
+
+olympics-3-train-qa.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/evaluation at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/evaluation
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+Evaluate_RAG_with_LlamaIndex.ipynb
+How_to_eval_abstractive_summarization.ipynb
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/evaluation/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+Evaluate_RAG_with_LlamaIndex.ipynb
+	
+ 
+	
+ 
+
+
+How_to_eval_abstractive_summarization.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/data at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/data
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+10k
+papers
+25000_spend_dataset_current.csv
+AG_news_samples.csv
+Chinook.db
+NotRealCorp_financial_data.json
+amazon_product_kg.json
+bison.mp4
+cookbook_recipes_nlg_10k.csv
+created_slides.pptx
+dbpedia_samples.jsonl
+example_events_openapi.json
+example_requests_to_parallel_process.jsonl
+fia_f1_power_unit_financial_regulations_issue_1_-_2022-08-16.pdf
+fine_food_reviews_1k.csv
+fine_food_reviews_with_embeddings_1k.csv
+labelled_transactions.csv
+language_models_are_unsupervised_multitask_learners.pdf
+library_transactions_with_embeddings_359.csv
+marketing_sample_for_amazon_com-ecommerce__20200101_20200131__10k_data.csv
+recommendations_embeddings_cache.pkl
+scifact_claims.jsonl
+scifact_corpus.jsonl
+snli_1.0_train_2k.csv
+styles_2k.csv
+styles_44k.csv
+toy_chat_fine_tuning.jsonl
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/data/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+10k
+	
+ 
+	
+ 
+
+
+papers
+	
+ 
+	
+ 
+
+
+25000_spend_dataset_current.csv
+	
+ 
+	
+ 
+
+
+AG_news_samples.csv
+	
+ 
+	
+ 
+
+
+Chinook.db
+	
+ 
+	
+ 
+
+
+NotRealCorp_financial_data.json
+	
+ 
+	
+ 
+
+
+amazon_product_kg.json
+	
+ 
+	
+ 
+
+
+bison.mp4
+	
+ 
+	
+ 
+
+
+cookbook_recipes_nlg_10k.csv
+	
+ 
+	
+ 
+
+
+created_slides.pptx
+	
+ 
+	
+ 
+
+
+dbpedia_samples.jsonl
+	
+ 
+	
+ 
+
+
+example_events_openapi.json
+	
+ 
+	
+ 
+
+
+example_requests_to_parallel_process.jsonl
+	
+ 
+	
+ 
+
+
+fia_f1_power_unit_financial_regulations_issue_1_-_2022-08-16.pdf
+	
+ 
+	
+ 
+
+
+fine_food_reviews_1k.csv
+	
+ 
+	
+ 
+
+
+fine_food_reviews_with_embeddings_1k.csv
+	
+ 
+	
+ 
+
+
+labelled_transactions.csv
+	
+ 
+	
+ 
+
+
+language_models_are_unsupervised_multitask_learners.pdf
+	
+ 
+	
+ 
+
+
+library_transactions_with_embeddings_359.csv
+	
+ 
+	
+ 
+
+
+marketing_sample_for_amazon_com-ecommerce__20200101_20200131__10k_data.csv
+	
+ 
+	
+ 
+
+
+recommendations_embeddings_cache.pkl
+	
+ 
+	
+ 
+
+
+scifact_claims.jsonl
+	
+ 
+	
+ 
+
+
+scifact_corpus.jsonl
+	
+ 
+	
+ 
+
+
+snli_1.0_train_2k.csv
+	
+ 
+	
+ 
+
+
+styles_2k.csv
+	
+ 
+	
+ 
+
+
+styles_44k.csv
+	
+ 
+	
+ 
+
+
+toy_chat_fine_tuning.jsonl
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/dalle at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/dalle
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+images
+How_to_create_dynamic_masks_with_DALL-E_and_Segment_Anything.ipynb
+Image_generations_edits_and_variations_with_DALL-E.ipynb
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/dalle/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+images
+	
+ 
+	
+ 
+
+
+How_to_create_dynamic_masks_with_DALL-E_and_Segment_Anything.ipynb
+	
+ 
+	
+ 
+
+
+Image_generations_edits_and_variations_with_DALL-E.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/book_translation at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/book_translation
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+data
+translate_latex_book.ipynb
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/book_translation/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+data
+	
+ 
+	
+ 
+
+
+translate_latex_book.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples/azure at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples/azure
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+archive
+chat.ipynb
+chat_with_your_own_data.ipynb
+embeddings.ipynb
+functions.ipynb
+whisper.ipynb
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook/examples
+/azure/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+archive
+	
+ 
+	
+ 
+
+
+chat.ipynb
+	
+ 
+	
+ 
+
+
+chat_with_your_own_data.ipynb
+	
+ 
+	
+ 
+
+
+embeddings.ipynb
+	
+ 
+	
+ 
+
+
+functions.ipynb
+	
+ 
+	
+ 
+
+
+whisper.ipynb
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/images at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/images
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+images
+NotRealCorp_chart.png
+assistants_overview_assistants_dashboard.png
+assistants_overview_assistants_playground.png
+assistants_overview_diagram.png
+assistants_overview_enable_code_interpreter.png
+assistants_overview_enable_function.png
+assistants_overview_enable_retrieval.png
+assistants_overview_new_assistant.png
+chain_of_thought_fig1.png
+chain_of_thought_fig11.png
+chain_of_thought_fig3.png
+chain_of_thought_fig5.png
+dalle_image.png
+data_vis_slide.png
+faithful-reasoning_fig1.png
+faithful-reasoning_fig2.png
+faithful-reasoning_fig3.png
+faithful-reasoning_fig4.png
+faithful-reasoning_fig5.png
+faithful-reasoning_fig7.png
+faithful-reasoning_tab2.png
+faithful-reasoning_tab5.png
+least-to-most_fig1.png
+least-to-most_tab11.png
+least-to-most_tab4.png
+least-to-most_tab9.png
+llamaindex_rag_overview.png
+lm_cascades_fig1.png
+lm_cascades_fig3.png
+lm_cascades_fig4.png
+lm_cascades_fig5.png
+lm_cascades_fig6.png
+maieutic_fig2.png
+maieutic_fig6.png
+maieutic_tab1.png
+openai-cookbook-white.png
+openai-cookbook.png
+search_rerank_answer.png
+selection-inference_fig1.png
+selection-inference_fig4.png
+self-consistency_fig1.png
+self-consistency_fig3.png
+star_fig1.png
+star_tab1.png
+title_slide.png
+verifiers_fig3.png
+verifiers_fig5.png
+zero-shot_reasoners_fig1.png
+zero-shot_reasoners_fig2.png
+zero-shot_reasoners_tab1.png
+zero-shot_reasoners_tab5.png
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook
+/images/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+NotRealCorp_chart.png
+	
+ 
+	
+ 
+
+
+assistants_overview_assistants_dashboard.png
+	
+ 
+	
+ 
+
+
+assistants_overview_assistants_playground.png
+	
+ 
+	
+ 
+
+
+assistants_overview_diagram.png
+	
+ 
+	
+ 
+
+
+assistants_overview_enable_code_interpreter.png
+	
+ 
+	
+ 
+
+
+assistants_overview_enable_function.png
+	
+ 
+	
+ 
+
+
+assistants_overview_enable_retrieval.png
+	
+ 
+	
+ 
+
+
+assistants_overview_new_assistant.png
+	
+ 
+	
+ 
+
+
+chain_of_thought_fig1.png
+	
+ 
+	
+ 
+
+
+chain_of_thought_fig11.png
+	
+ 
+	
+ 
+
+
+chain_of_thought_fig3.png
+	
+ 
+	
+ 
+
+
+chain_of_thought_fig5.png
+	
+ 
+	
+ 
+
+
+dalle_image.png
+	
+ 
+	
+ 
+
+
+data_vis_slide.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_fig1.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_fig2.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_fig3.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_fig4.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_fig5.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_fig7.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_tab2.png
+	
+ 
+	
+ 
+
+
+faithful-reasoning_tab5.png
+	
+ 
+	
+ 
+
+
+least-to-most_fig1.png
+	
+ 
+	
+ 
+
+
+least-to-most_tab11.png
+	
+ 
+	
+ 
+
+
+least-to-most_tab4.png
+	
+ 
+	
+ 
+
+
+least-to-most_tab9.png
+	
+ 
+	
+ 
+
+
+llamaindex_rag_overview.png
+	
+ 
+	
+ 
+
+
+lm_cascades_fig1.png
+	
+ 
+	
+ 
+
+
+lm_cascades_fig3.png
+	
+ 
+	
+ 
+
+
+lm_cascades_fig4.png
+	
+ 
+	
+ 
+
+
+lm_cascades_fig5.png
+	
+ 
+	
+ 
+
+
+lm_cascades_fig6.png
+	
+ 
+	
+ 
+
+
+maieutic_fig2.png
+	
+ 
+	
+ 
+
+
+maieutic_fig6.png
+	
+ 
+	
+ 
+
+
+maieutic_tab1.png
+	
+ 
+	
+ 
+
+
+openai-cookbook-white.png
+	
+ 
+	
+ 
+
+
+openai-cookbook.png
+	
+ 
+	
+ 
+
+
+search_rerank_answer.png
+	
+ 
+	
+ 
+
+
+selection-inference_fig1.png
+	
+ 
+	
+ 
+
+
+selection-inference_fig4.png
+	
+ 
+	
+ 
+
+
+self-consistency_fig1.png
+	
+ 
+	
+ 
+
+
+self-consistency_fig3.png
+	
+ 
+	
+ 
+
+
+star_fig1.png
+	
+ 
+	
+ 
+
+
+star_tab1.png
+	
+ 
+	
+ 
+
+
+title_slide.png
+	
+ 
+	
+ 
+
+
+verifiers_fig3.png
+	
+ 
+	
+ 
+
+
+verifiers_fig5.png
+	
+ 
+	
+ 
+
+
+zero-shot_reasoners_fig1.png
+	
+ 
+	
+ 
+
+
+zero-shot_reasoners_fig2.png
+	
+ 
+	
+ 
+
+
+zero-shot_reasoners_tab1.png
+	
+ 
+	
+ 
+
+
+zero-shot_reasoners_tab5.png
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/examples at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/examples
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+examples
+azure
+book_translation
+dalle
+data
+evaluation
+fine-tuned_qa
+third_party
+utils
+vector_databases
+Assistants_API_overview_python.ipynb
+Chat_finetuning_data_prep.ipynb
+Classification_using_embeddings.ipynb
+Clustering.ipynb
+Clustering_for_transaction_classification.ipynb
+Code_search_using_embeddings.ipynb
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+Customizing_embeddings.ipynb
+Embedding_Wikipedia_articles_for_search.ipynb
+Embedding_long_inputs.ipynb
+Entity_extraction_for_long_documents.ipynb
+Fine-tuned_classification.ipynb
+Fine_tuning_for_function_calling.ipynb
+Function_calling_finding_nearby_places.ipynb
+Function_calling_with_an_OpenAPI_spec.ipynb
+GPT_with_vision_for_video_understanding.ipynb
+Get_embeddings_from_dataset.ipynb
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+How_to_build_an_agent_with_the_node_sdk.mdx
+How_to_call_functions_for_knowledge_retrieval.ipynb
+How_to_call_functions_with_chat_models.ipynb
+How_to_count_tokens_with_tiktoken.ipynb
+How_to_finetune_chat_models.ipynb
+How_to_format_inputs_to_ChatGPT_models.ipynb
+How_to_handle_rate_limits.ipynb
+How_to_stream_completions.ipynb
+How_to_use_guardrails.ipynb
+Multiclass_classification_for_transactions.ipynb
+Named_Entity_Recognition_to_enrich_text.ipynb
+Question_answering_using_a_search_API.ipynb
+Question_answering_using_embeddings.ipynb
+RAG_with_graph_db.ipynb
+Recommendation_using_embeddings.ipynb
+Regression_using_embeddings.ipynb
+Reproducible_outputs_with_the_seed_parameter.ipynb
+Search_reranking_with_cross-encoders.ipynb
+Semantic_text_search_using_embeddings.ipynb
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+User_and_product_embeddings.ipynb
+Using_embeddings.ipynb
+Using_logprobs.ipynb
+Visualizing_embeddings_in_2D.ipynb
+Visualizing_embeddings_in_3D.ipynb
+Whisper_correct_misspelling.ipynb
+Whisper_processing_guide.ipynb
+Whisper_prompting_guide.ipynb
+Zero-shot_classification_with_embeddings.ipynb
+api_request_parallel_processor.py
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook
+/examples/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+azure
+	
+ 
+	
+ 
+
+
+book_translation
+	
+ 
+	
+ 
+
+
+dalle
+	
+ 
+	
+ 
+
+
+data
+	
+ 
+	
+ 
+
+
+evaluation
+	
+ 
+	
+ 
+
+
+fine-tuned_qa
+	
+ 
+	
+ 
+
+
+third_party
+	
+ 
+	
+ 
+
+
+utils
+	
+ 
+	
+ 
+
+
+vector_databases
+	
+ 
+	
+ 
+
+
+Assistants_API_overview_python.ipynb
+	
+ 
+	
+ 
+
+
+Chat_finetuning_data_prep.ipynb
+	
+ 
+	
+ 
+
+
+Classification_using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Clustering.ipynb
+	
+ 
+	
+ 
+
+
+Clustering_for_transaction_classification.ipynb
+	
+ 
+	
+ 
+
+
+Code_search_using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Creating_slides_with_Assistants_API_and_DALL-E3.ipynb
+	
+ 
+	
+ 
+
+
+Customizing_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Embedding_Wikipedia_articles_for_search.ipynb
+	
+ 
+	
+ 
+
+
+Embedding_long_inputs.ipynb
+	
+ 
+	
+ 
+
+
+Entity_extraction_for_long_documents.ipynb
+	
+ 
+	
+ 
+
+
+Fine-tuned_classification.ipynb
+	
+ 
+	
+ 
+
+
+Fine_tuning_for_function_calling.ipynb
+	
+ 
+	
+ 
+
+
+Function_calling_finding_nearby_places.ipynb
+	
+ 
+	
+ 
+
+
+Function_calling_with_an_OpenAPI_spec.ipynb
+	
+ 
+	
+ 
+
+
+GPT_with_vision_for_video_understanding.ipynb
+	
+ 
+	
+ 
+
+
+Get_embeddings_from_dataset.ipynb
+	
+ 
+	
+ 
+
+
+How_to_build_a_tool-using_agent_with_Langchain.ipynb
+	
+ 
+	
+ 
+
+
+How_to_build_an_agent_with_the_node_sdk.mdx
+	
+ 
+	
+ 
+
+
+How_to_call_functions_for_knowledge_retrieval.ipynb
+	
+ 
+	
+ 
+
+
+How_to_call_functions_with_chat_models.ipynb
+	
+ 
+	
+ 
+
+
+How_to_count_tokens_with_tiktoken.ipynb
+	
+ 
+	
+ 
+
+
+How_to_finetune_chat_models.ipynb
+	
+ 
+	
+ 
+
+
+How_to_format_inputs_to_ChatGPT_models.ipynb
+	
+ 
+	
+ 
+
+
+How_to_handle_rate_limits.ipynb
+	
+ 
+	
+ 
+
+
+How_to_stream_completions.ipynb
+	
+ 
+	
+ 
+
+
+How_to_use_guardrails.ipynb
+	
+ 
+	
+ 
+
+
+Multiclass_classification_for_transactions.ipynb
+	
+ 
+	
+ 
+
+
+Named_Entity_Recognition_to_enrich_text.ipynb
+	
+ 
+	
+ 
+
+
+Question_answering_using_a_search_API.ipynb
+	
+ 
+	
+ 
+
+
+Question_answering_using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+RAG_with_graph_db.ipynb
+	
+ 
+	
+ 
+
+
+Recommendation_using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Regression_using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Reproducible_outputs_with_the_seed_parameter.ipynb
+	
+ 
+	
+ 
+
+
+Search_reranking_with_cross-encoders.ipynb
+	
+ 
+	
+ 
+
+
+Semantic_text_search_using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Unit_test_writing_using_a_multi-step_prompt.ipynb
+	
+ 
+	
+ 
+
+
+Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+	
+ 
+	
+ 
+
+
+User_and_product_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Using_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+Using_logprobs.ipynb
+	
+ 
+	
+ 
+
+
+Visualizing_embeddings_in_2D.ipynb
+	
+ 
+	
+ 
+
+
+Visualizing_embeddings_in_3D.ipynb
+	
+ 
+	
+ 
+
+
+Whisper_correct_misspelling.ipynb
+	
+ 
+	
+ 
+
+
+Whisper_processing_guide.ipynb
+	
+ 
+	
+ 
+
+
+Whisper_prompting_guide.ipynb
+	
+ 
+	
+ 
+
+
+Zero-shot_classification_with_embeddings.ipynb
+	
+ 
+	
+ 
+
+
+api_request_parallel_processor.py
+	
+ 
+	
+ 
+ 
+
+openai-cookbook/articles at main · openai/openai-cookbook · GitHub
+https://github.com/openai/openai-cookbook/tree/main/articles
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+Files
+ main
+.github
+articles
+how_to_work_with_large_language_models.md
+related_resources.md
+techniques_to_improve_reliability.md
+text_comparison_examples.md
+what_is_new_with_dalle_3.mdx
+what_makes_documentation_good.md
+examples
+images
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+authors.yaml
+registry.yaml
+Breadcrumbs
+openai-cookbook
+/articles/
+Directory actions
+More options
+Latest commit
+ 
+History
+History
+Folders and files
+Name	Last commit message	Last commit date
+
+parent directory
+..
+
+
+how_to_work_with_large_language_models.md
+	
+ 
+	
+ 
+
+
+related_resources.md
+	
+ 
+	
+ 
+
+
+techniques_to_improve_reliability.md
+	
+ 
+	
+ 
+
+
+text_comparison_examples.md
+	
+ 
+	
+ 
+
+
+what_is_new_with_dalle_3.mdx
+	
+ 
+	
+ 
+
+
+what_makes_documentation_good.md
+	
+ 
+	
+ 
+ 
+
+GitHub - openai/openai-cookbook: Examples and guides for using the OpenAI API
+https://github.com/openai/openai-cookbook/tree/main
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search or jump to...
+Sign in
+Sign up
+openai
+/
+openai-cookbook
+Public
+Notifications
+Fork 8.9k
+ Star 53.3k
+Code
+Issues
+24
+Pull requests
+32
+Actions
+Security
+Insights
+openai/openai-cookbook
+ main
+Branches
+Tags
+Code
+Folders and files
+Name	Last commit message	Last commit date
+
+Latest commit
+ 
+History
+789 Commits
+
+
+.github
+	
+ 
+	
+ 
+
+
+articles
+	
+ 
+	
+ 
+
+
+examples
+	
+ 
+	
+ 
+
+
+images
+	
+ 
+	
+ 
+
+
+.gitignore
+	
+ 
+	
+ 
+
+
+CONTRIBUTING.md
+	
+ 
+	
+ 
+
+
+LICENSE
+	
+ 
+	
+ 
+
+
+README.md
+	
+ 
+	
+ 
+
+
+authors.yaml
+	
+ 
+	
+ 
+
+
+registry.yaml
+	
+ 
+	
+ 
+Repository files navigation
+README
+MIT license
+
+✨ Navigate at cookbook.openai.com
+
+Example code and guides for accomplishing common tasks with the OpenAI API. To run these examples, you'll need an OpenAI account and associated API key (create a free account here).
+
+Most code examples are written in Python, though the concepts can be applied in any language.
+
+For other useful tools, guides and courses, check out these related resources from around the web.
+
+Contributing
+
+The OpenAI Cookbook is a community-driven resource. Whether you're submitting an idea, fixing a typo, adding a new guide, or improving an existing one, your contributions are greatly appreciated!
+
+Before contributing, read through the existing issues and pull requests to see if someone else is already working on something similar. That way you can avoid duplicating efforts.
+
+If there are examples or guides you'd like to see, feel free to suggest them on the issues page.
+
+If you'd like to contribute new content, make sure to read through our contribution guidelines. We welcome high-quality submissions of new examples and guides, as long as they meet our criteria and fit within the scope of the cookbook.
+
+The contents of this repo are automatically rendered into cookbook.openai.com based on registry.yaml.
+
+About
+
+Examples and guides for using the OpenAI API
+
+cookbook.openai.com
+Topics
+docs openai gpt-3 gpt-4 chatgpt
+Resources
+ Readme
+License
+ MIT license
+ Activity
+ Custom properties
+Stars
+ 53.3k stars
+Watchers
+ 836 watching
+Forks
+ 8.9k forks
+Report repository
+
+
+Contributors
+192
++ 178 contributors
+
+
+Languages
+MDX
+100.0%
+Footer
+© 2024 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+

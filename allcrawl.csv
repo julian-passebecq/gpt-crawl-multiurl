@@ -1,0 +1,111 @@
+﻿certification,learning path,module url
+dp203,Get started with data engineering on Azure,https://learn.microsoft.com/en-us/training/modules/introduction-to-data-engineering-azure/
+dp203,Get started with data engineering on Azure,https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-data-lake-storage/
+dp203,Get started with data engineering on Azure,https://learn.microsoft.com/en-us/training/modules/introduction-azure-synapse-analytics/
+dp203,Build data analytics solutions using Azure Synapse serverless SQL pools,https://learn.microsoft.com/en-us/training/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/
+dp203,Build data analytics solutions using Azure Synapse serverless SQL pools,https://learn.microsoft.com/en-us/training/modules/use-azure-synapse-serverless-sql-pools-for-transforming-data-lake/
+dp203,Build data analytics solutions using Azure Synapse serverless SQL pools,https://learn.microsoft.com/en-us/training/modules/create-metadata-objects-azure-synapse-serverless-sql-pools/
+dp203,Build data analytics solutions using Azure Synapse serverless SQL pools,https://learn.microsoft.com/en-us/training/modules/secure-data-manage-users-azure-synapse-serverless-sql-pools/
+dp203,Perform data engineering with Azure Synapse Apache Spark Pools,https://learn.microsoft.com/en-us/training/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/
+dp203,Perform data engineering with Azure Synapse Apache Spark Pools,https://learn.microsoft.com/en-us/training/modules/transform-data-spark-azure-synapse-analytics/
+dp203,Perform data engineering with Azure Synapse Apache Spark Pools,https://learn.microsoft.com/en-us/training/modules/use-delta-lake-azure-synapse-analytics/
+dp203,Work with Data Warehouses using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/design-multidimensional-schema-to-optimize-analytical-workloads/
+dp203,Work with Data Warehouses using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/load-optimize-data-into-relational-data-warehouse/
+dp203,Work with Data Warehouses using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/manage-monitor-data-warehouse-activities-azure-synapse-analytics/
+dp203,Work with Data Warehouses using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/secure-data-warehouse-azure-synapse-analytics/
+dp203,Transfer and transform data with Azure Synapse Analytics pipelines,https://learn.microsoft.com/en-us/training/modules/build-data-pipeline-azure-synapse-analytics/
+dp203,Transfer and transform data with Azure Synapse Analytics pipelines,https://learn.microsoft.com/en-us/training/modules/use-spark-notebooks-azure-synapse-pipeline/
+dp203,Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/
+dp203,Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/configure-azure-synapse-link-with-azure-cosmos-db/
+dp203,Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics,https://learn.microsoft.com/en-us/training/modules/implement-synapse-link-for-sql/
+dp203,Implement a Data Streaming Solution with Azure Stream Analytics,https://learn.microsoft.com/en-us/training/modules/introduction-to-data-streaming/
+dp203,Implement a Data Streaming Solution with Azure Stream Analytics,https://learn.microsoft.com/en-us/training/modules/ingest-streaming-data-use-azure-stream-analytics-synapse/
+dp203,Implement a Data Streaming Solution with Azure Stream Analytics,https://learn.microsoft.com/en-us/training/modules/visualize-real-time-data-azure-stream-analytics-power-bi/
+dp203,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/intro-to-microsoft-purview/
+dp203,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/discover-trusted-data-use-azure-purview/
+dp203,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/catalog-data-artifacts-use-microsoft-purview/
+dp203,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/manage-power-bi-artifacts-use-microsoft-purview/
+dp203,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/integrate-microsoft-purview-azure-synapse-analytics/
+dp203,Data engineering with Azure Databricks,https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/
+dp203,Data engineering with Azure Databricks,https://learn.microsoft.com/en-us/training/modules/use-apache-spark-azure-databricks/
+dp203,Data engineering with Azure Databricks,https://learn.microsoft.com/en-us/training/modules/use-delta-lake-azure-databricks/
+dp203,Data engineering with Azure Databricks,https://learn.microsoft.com/en-us/training/modules/use-sql-warehouses-azure-databricks/
+dp203,Data engineering with Azure Databricks,https://learn.microsoft.com/en-us/training/modules/run-azure-databricks-notebooks-azure-data-factory/
+dp500,Introduction to data analytics on Azure,https://learn.microsoft.com/en-us/training/modules/explore-azure-data-services-for-modern-analytics/
+dp500,Introduction to data analytics on Azure,https://learn.microsoft.com/en-us/training/modules/understand-concepts-of-data-analytics/
+dp500,Introduction to data analytics on Azure,https://learn.microsoft.com/en-us/training/modules/explore-data-analytics-scale/
+dp500,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/intro-to-microsoft-purview/
+dp500,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/discover-trusted-data-use-azure-purview/
+dp500,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/catalog-data-artifacts-use-microsoft-purview/
+dp500,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/manage-power-bi-artifacts-use-microsoft-purview/
+dp500,Govern data across an enterprise,https://learn.microsoft.com/en-us/training/modules/integrate-microsoft-purview-azure-synapse-analytics/
+dp500,"Model, query, and explore data in Azure Synapse",https://learn.microsoft.com/en-us/training/modules/introduction-azure-synapse-analytics/
+dp500,"Model, query, and explore data in Azure Synapse",https://learn.microsoft.com/en-us/training/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/
+dp500,"Model, query, and explore data in Azure Synapse",https://learn.microsoft.com/en-us/training/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/
+dp500,"Model, query, and explore data in Azure Synapse",https://learn.microsoft.com/en-us/training/modules/design-multidimensional-schema-to-optimize-analytical-workloads/
+dp500,Prepare data for tabular models in Power BI,https://learn.microsoft.com/en-us/training/modules/choose-power-bi-model-framework/
+dp500,Prepare data for tabular models in Power BI,https://learn.microsoft.com/en-us/training/modules/understand-scalability-power-bi/
+dp500,Prepare data for tabular models in Power BI,https://learn.microsoft.com/en-us/training/modules/create-manage-scalable-power-bi-dataflows/
+dp500,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/create-power-bi-model-relationships/
+dp500,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-time-intelligence/
+dp500,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/create-calculation-groups/
+dp500,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/enforce-power-bi-model-security/
+dp500,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/use-tools-optimize-power-bi-performance/
+dp500,Implement advanced data visualization techniques by using Power BI,https://learn.microsoft.com/en-us/training/modules/understand-advanced-data-visualization-concepts/
+dp500,Implement advanced data visualization techniques by using Power BI,https://learn.microsoft.com/en-us/training/modules/monitor-data-real-time-power-bi/
+dp500,Implement advanced data visualization techniques by using Power BI,https://learn.microsoft.com/en-us/training/modules/create-paginated-reports-power-bi/
+dp500,Implement and manage an analytics environment,https://learn.microsoft.com/en-us/training/modules/power-bi-admin-governance/
+dp500,Implement and manage an analytics environment,https://learn.microsoft.com/en-us/training/modules/power-bi-admin-monitor/
+dp500,Implement and manage an analytics environment,https://learn.microsoft.com/en-us/training/modules/power-bi-admin-reach/
+dp500,Implement and manage an analytics environment,https://learn.microsoft.com/en-us/training/modules/build-reports-using-power-bi-azure-synapse-analytics/
+dp600,Ingest data with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/use-dataflow-gen-2-fabric/
+dp600,Ingest data with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/ingest-data-with-spark-fabric-notebooks/
+dp600,Ingest data with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/use-data-factory-pipelines-fabric/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/introduction-end-analytics-use-microsoft-fabric/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/get-started-lakehouses/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/use-apache-spark-work-files-lakehouse/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/work-delta-lake-tables-fabric/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/use-dataflow-gen-2-fabric/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/use-data-factory-pipelines-fabric/
+dp600,Implement a Lakehouse with Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/describe-medallion-architecture/
+dp600,Work with data warehouses using Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/
+dp600,Work with data warehouses using Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/load-data-into-microsoft-fabric-data-warehouse/
+dp600,Work with data warehouses using Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/query-data-warehouse-microsoft-fabric/
+dp600,Work with data warehouses using Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/monitor-fabric-data-warehouse/
+dp600,Work with semantic models in Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/understand-scalability-power-bi/
+dp600,Work with semantic models in Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/create-power-bi-model-relationships/
+dp600,Work with semantic models in Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/use-tools-optimize-power-bi-performance/
+dp600,Work with semantic models in Microsoft Fabric,https://learn.microsoft.com/en-us/training/modules/enforce-power-bi-model-security/
+dp600,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/create-power-bi-model-relationships/
+dp600,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-time-intelligence/
+dp600,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/create-calculation-groups/
+dp600,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/enforce-power-bi-model-security/
+dp600,Design and build tabular models,https://learn.microsoft.com/en-us/training/modules/use-tools-optimize-power-bi-performance/
+dp600,Manage the analytics development lifecycle,https://learn.microsoft.com/en-us/training/modules/design-power-bi-application-lifecycle-management-strategy/
+dp600,Manage the analytics development lifecycle,https://learn.microsoft.com/en-us/training/modules/power-bi-deployment-pipelines/
+dp600,Manage the analytics development lifecycle,https://learn.microsoft.com/en-us/training/modules/create-manage-power-bi-assets/
+pl300,Get started with Microsoft data analytics,https://learn.microsoft.com/en-us/training/modules/data-analytics-microsoft/
+pl300,Get started with Microsoft data analytics,https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/
+pl300,Prepare data for analysis with Power BI,https://learn.microsoft.com/en-us/training/modules/get-data/
+pl300,Prepare data for analysis with Power BI,https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-models/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/choose-power-bi-model-framework/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/design-model-power-bi/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-write-formulas/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-add-measures/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-add-calculated-tables/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/dax-power-bi-time-intelligence/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/optimize-model-power-bi/
+pl300,Model data with Power BI,https://learn.microsoft.com/en-us/training/modules/enforce-power-bi-model-security/
+pl300,Build Power BI visuals and reports,https://learn.microsoft.com/en-us/training/modules/power-bi-effective-requirements/
+pl300,Build Power BI visuals and reports,https://learn.microsoft.com/en-us/training/modules/power-bi-effective-reports/
+pl300,Build Power BI visuals and reports,https://learn.microsoft.com/en-us/training/modules/power-bi-effective-filters/
+pl300,Build Power BI visuals and reports,https://learn.microsoft.com/en-us/training/modules/power-bi-effective-user-experience/
+pl300,Build Power BI visuals and reports,https://learn.microsoft.com/en-us/training/modules/perform-analytics-power-bi/
+pl300,Build Power BI visuals and reports,https://learn.microsoft.com/en-us/training/modules/create-paginated-reports-power-bi/
+pl300,Manage workspaces and datasets in Power BI,https://learn.microsoft.com/en-us/training/modules/create-manage-workspaces-power-bi/
+pl300,Manage workspaces and datasets in Power BI,https://learn.microsoft.com/en-us/training/modules/manage-datasets-power-bi/
+pl300,Manage workspaces and datasets in Power BI,https://learn.microsoft.com/en-us/training/modules/create-dashboards-power-bi/
+pl300,Manage workspaces and datasets in Power BI,https://learn.microsoft.com/en-us/training/modules/row-level-security-power-bi/
+openai,docs,https://platform.openai.com/docs/overview
+openai,docs,https://platform.openai.com/docs/api-reference

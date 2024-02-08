@@ -1,0 +1,15 @@
+{
+  "extends": "@apify/tsconfig",
+  "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2022",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": false,
+    "skipLibCheck": true,
+    "lib": ["DOM"],
+    "strict": true,
+  },
+  "include": ["./src/**/*", "config.ts"]
+}

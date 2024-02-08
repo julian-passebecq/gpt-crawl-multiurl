@@ -1,0 +1,9 @@
+{
+	"id": "Wd3WN6g4QCmeInn",
+	"json": "{\"id\":\"Wd3WN6g4QCmeInn\",\"url\":\"https://platform.openai.com/docs/api-reference/runs/cancelRun\",\"loadedUrl\":\"https://platform.openai.com/docs/api-reference/runs/cancelRun\",\"uniqueKey\":\"https://platform.openai.com/docs/api-reference/runs/cancelRun\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"skipNavigation\":false,\"state\":4}},\"handledAt\":\"2024-01-29T11:20:56.047Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://platform.openai.com/docs/api-reference/runs/cancelRun",
+	"url": "https://platform.openai.com/docs/api-reference/runs/cancelRun"
+}
