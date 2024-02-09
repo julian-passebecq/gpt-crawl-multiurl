@@ -1,8 +1,8 @@
 multi url v0.1 08feb2024
 made by julianp
 
-don't use config ts for the url to scrawl, only modify json name in config.ts
-put the url to crawl in tocrawl.csv
+don't use config ts to modify the url to scrawl, but use config ts to modify json name for your output document
+put the url to crawl in src/tocrawl.csv (toscrawl.csv in root folder is a old relicat)
 
 optional
 put all url in allcrawl.csv
